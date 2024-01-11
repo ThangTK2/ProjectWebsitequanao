@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coolmate | Đăng nhập</title>
+    <link rel="icon" href="asset/images/logo.png" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f8f8f8;
+        }
+
+        button{
+            padding: 8px 14px;
+            border: none;
+            color: whitesmoke;
+            background-color: black;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        button:hover{
+            background-color: #e8e8e8;
+            color: black;
+        }
+
+        .login-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 350px;
+            text-align: center;
+        }
+
+        .login-container h2 {
+            margin-bottom: 50px;
+            color: #000;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        .form-group input {
+            height: 35px;
+            border: none;
+            background-color: transparent;
+            margin-bottom: 12px;
+            padding-left: 12px;
+            border: 1px solid #e8e8e8;
+            border-radius: 20px;
+            width: 95%;
+          }
+
+        .linkloginsignin{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .linkloginsignin span a{
+            text-decoration: none;
+            font-size: 14px;
+            color: #2f5acf;
+        }
+
+        .linkloginsignin span a:hover{
+            color: #555;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="login-container">
+    <img src="asset/images/logo.png" alt="" style="height: 70px; width: 100px;">
+    <h2>Coolmate - Đăng Nhập</h2>
+    <div class="form-group">
+        <input type="text" id="email" name="email" placeholder="Nhập email..." required>
+    </div>
+    <div class="form-group">
+        <input type="password" id="password" name="password" placeholder="Nhập mật khẩu..." required>
+    </div>
+    <button onclick="login()">Đăng Nhập</button><br><br>
+    <div class="linkloginsignin">
+        <span><a href="">Bạn quên mật khẩu?</a></span>
+        <span><a href="signin.html">Đăng ký tài khoản mới</a></span>
+    </div>
+</div>
+
+<script>
+    function login() {
+        var email = document.getElementById('email').value;
+        var password = document.getElementById('password').value;
+        if (email === "nht1072@gmail.com" && password === "1") {
+            Redirect()
+        } else {
+            alert("Email hoặc mật khẩu không đúng. Vui lòng thử lại.");
+        }
+    }
+
+    function Redirect() {
+        window.location="http://127.0.0.1:5500/";
+    }
+</script>
+
+</body>
+</html>
