@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" type="image/png" href="https://brademar.com/wp-content/uploads/2022/09/Coolmate-Logo-PNG-4.png"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="asset/css/style.css">
+  <link rel="stylesheet" href="asset/ckeditor5/styles.css">
+  <title>Coolmate | Admin</title>
+</head>
+<body>
+  <section class="admin">
+    <div class="row-grid">
+      <div class="admin-sidebar">
+        <div class="admin-sidebar-top">
+          <a href="/fe/index.html"><img src="asset/images/logo.png" alt="Logo"></a>
+        </div>
+        <div class="admin-sidebar-content">
+          <ul>
+            <li><a href=""><i class="ri-dashboard-line"></i>Dashboard<i class="ri-arrow-down-s-line"></i></a>
+              <ul class="sub-menu">
+                <div class="sub-menu-items">
+                  <li><a href=""><i class="ri-arrow-right-s-fill"></i>Tổng quan</a></li>
+                </div>
+              </ul>
+            </li>
+            <li><a href=""><i class="ri-file-list-line"></i>Đơn hàng<i class="ri-arrow-down-s-line"></i></a>
+              <ul class="sub-menu">
+                <div class="sub-menu-items">
+                  <li><a href=""><i class="ri-arrow-right-s-fill"></i>Danh sách</a></li>
+                </div>
+              </ul>
+            </li>
+            <li>
+              <a href=""><i class="ri-shopping-basket-line"></i>Sản phẩm<i class="ri-arrow-down-s-line"></i></a>
+              <ul class="sub-menu">
+                <div class="sub-menu-items">
+                  <li><a href=""><i class="ri-arrow-right-s-fill"></i>Danh sách</a></li>
+                  <li><a href=""><i class="ri-arrow-right-s-fill"></i>Thêm sản phẩm</a></li>
+                </div>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="admin-content">
+        <div class="admin-content-top">
+          <div class="admin-content-top-left">
+            <ul class="flex-box">
+              <li><i class="ri-search-line"></i></li>
+              <li><i class="ri-drag-move-line"></i></li>
+            </ul>
+          </div>
+          <div class="admin-content-top-right">
+            <ul class="flex-box">
+              <li><i class="ri-notification-2-line" number="2"></i></li>
+              <li><i class="ri-message-2-line" number="5"></i></li>
+              <li class="flex-box">
+                <img style="width: 40px;" src="https://scontent.fdad1-3.fna.fbcdn.net/v/t1.6435-9/106802319_2561242120856530_6440393362921062800_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=7a1959&_nc_ohc=i0eLkbrLiO4AX-01Ed1&_nc_ht=scontent.fdad1-3.fna&oh=00_AfDz6gC5oamC2H3iRmihkXqnvcf_jQUvfm8yv9aKt9nDLA&oe=65C86AB3" alt="Image">
+                <p>TK2</p>
+                <i class="ri-arrow-down-s-line"></i>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="admin-content-main">
+          <div class="admin-content-main-title">
+            <h3>Sửa sản phẩm</h3>
+          </div>
+          <br>
+          <div class="admin-content-main-content">
+            <!-- nội dung -->
+            <div class="admin-content-main-content-product-add">
+              <div class="admin-content-main-content-left">
+                <div class="admin-content-main-content-input-two-input">
+                  <input type="text" placeholder="Tên sản phẩm...">
+                  <input type="text" placeholder="Chất liệu...">
+                </div>
+                <div class="admin-content-main-content-input-two-input">
+                  <input type="text" placeholder="Giá...">
+                  <input type="text" placeholder="Giá khuyến mãi...">
+                </div>
+                <textarea class="editor_desc" name="" id="">Đặc điểm nổi bật...</textarea>
+                <textarea class="editor_content" name="" id="">Mô tả sản phẩm...</textarea>
+                <br>
+                <button class="main-btn">Cập nhật sản phẩm</button>
+              </div>
+  
+              <div class="admin-content-main-content-right">
+                <div class="admin-content-main-content-right-image">
+                  <label class="image-label" for="file">Ảnh đại diện</label>
+                  <input id="file" type="file" name="" id="">
+                  <div class="image-show">
+  
+                  </div>
+                </div>
+                <div class="admin-content-main-content-right-images">
+                  <label for="files">Ảnh sản phẩm</label>
+                  <input id="files" type="file" name="" id="">
+                  <div class="images-show">
+  
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="asset/js/script.js"></script>
+  <script src="asset/ckeditor5/ckeditor.js"></script>
+  <script src="asset/ckeditor5/script.js"></script>
+</body>
+</html>

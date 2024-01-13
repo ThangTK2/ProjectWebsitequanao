@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coolmate | Đăng nhập</title>
-    <link rel="icon" href="asset/images/logo.png" />
+    <link rel="shortcut icon" type="image/png" href="https://brademar.com/wp-content/uploads/2022/09/Coolmate-Logo-PNG-4.png"/>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 
@@ -90,10 +90,10 @@
 <body>
 
 <div class="login-container">
-    <img src="asset/images/logo.png" alt="" style="height: 70px; width: 100px;">
+    <a href="/"><img src="asset/images/logo.png" alt="" style="height: 70px; width: 100px;"></a>
     <h2>Coolmate - Đăng Nhập</h2>
     <div class="form-group">
-        <input type="text" id="email" name="email" placeholder="Nhập email..." required>
+        <input type="text" id="email" name="email" placeholder="Nhập email..." required autocomplete="on">
     </div>
     <div class="form-group">
         <input type="password" id="password" name="password" placeholder="Nhập mật khẩu..." required>
@@ -117,7 +117,7 @@
     }
 
     function Redirect() {
-        window.location="http://127.0.0.1:5500/";
+        window.location="http://127.0.0.1:5500/fe/";
     }
 </script>
 
